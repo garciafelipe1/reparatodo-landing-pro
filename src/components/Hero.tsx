@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 const heroImage = "/lovable-uploads/c3d27fec-319b-440e-9464-21a7daf15576.png";
-const logoImage = "/lovable-uploads/21cc9dd6-ee06-4e9c-9f55-5ae1d61af1ea.png";
+const logoImage = "/lovable-uploads/logo.svg";
 
 const Hero = () => {
   return (
@@ -33,7 +33,7 @@ const Hero = () => {
               <img 
                 src={logoImage}
                 alt="ReparaTodo Logo"
-                className="w-48 h-auto"
+                className="w-64 h-auto"
               />
             </div>
             
