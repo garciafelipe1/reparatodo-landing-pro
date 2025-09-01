@@ -1,13 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
-import LogoProcessor from "./LogoProcessor";
 const heroImage = "/lovable-uploads/c3d27fec-319b-440e-9464-21a7daf15576.png";
 const logoImage = "/lovable-uploads/21cc9dd6-ee06-4e9c-9f55-5ae1d61af1ea.png";
 
 const Hero = () => {
   return (
     <section className="relative bg-black py-20 md:py-24 overflow-hidden">
-      <LogoProcessor />
       {/* Decorative dots pattern */}
       <div className="absolute bottom-0 left-0 w-40 h-40 opacity-30">
         <div className="grid grid-cols-8 gap-2 rotate-12">
