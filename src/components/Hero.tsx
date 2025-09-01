@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 const heroImage = "/lovable-uploads/c3d27fec-319b-440e-9464-21a7daf15576.png";
-const logoImage = "/lovable-uploads/fa4ce3e7-e589-4042-9130-8322882a6a4a.png";
+const logoImage = "/lovable-uploads/21cc9dd6-ee06-4e9c-9f55-5ae1d61af1ea.png";
 
 const Hero = () => {
   return (
