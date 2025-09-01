@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
-const heroImage = "/lovable-uploads/93f9f3fe-e5a4-4a45-8eea-36733049b7d4.png";
+const heroImage = "/lovable-uploads/c3d27fec-319b-440e-9464-21a7daf15576.png";
+const logoImage = "/lovable-uploads/fa4ce3e7-e589-4042-9130-8322882a6a4a.png";
 
 const Hero = () => {
   return (
@@ -28,14 +29,12 @@ const Hero = () => {
           {/* Content */}
           <div className="space-y-8">
             {/* Logo */}
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <div className="text-white font-bold text-xl">R</div>
-              </div>
-              <div>
-                <div className="text-white text-2xl font-bold tracking-wider">REPARA</div>
-                <div className="text-primary text-2xl font-bold tracking-wider">TODO</div>
-              </div>
+            <div className="flex items-center mb-8">
+              <img 
+                src={logoImage}
+                alt="ReparaTodo Logo"
+                className="w-48 h-auto"
+              />
             </div>
             
             <div className="space-y-6">
