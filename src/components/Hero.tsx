@@ -29,11 +29,11 @@ const Hero = () => {
           {/* Content */}
           <div className="space-y-8">
             {/* Logo */}
-            <div className="flex items-center mb-8">
+            <div className="flex items-center text-center lg:justify-start justify-center">
               <img 
                 src={logoImage}
                 alt="ReparaTodo Logo"
-                className="w-64 h-auto"
+                className="w-64 h-auto object-contain"
               />
             </div>
             
@@ -53,9 +53,19 @@ const Hero = () => {
 
             {/* Contact Button */}
             <div className="pt-6">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors shadow-lg">
-                <MessageCircle className="w-8 h-8 text-white" />
-              </div>
+              <a 
+                href="https://wa.me/542915049400?text=Hola!%20Quiero%20más%20información." 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-green-600 transition-colors shadow-lg">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                    alt="WhatsApp" 
+                    className="w-8 h-8"
+                  />
+                </div>
+              </a>
             </div>
           </div>
 
