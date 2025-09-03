@@ -3,50 +3,37 @@ import { Phone, MessageCircle, Clock } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-primary to-primary-hover relative overflow-hidden">
-      <div className="absolute inset-0 bg-white/5 opacity-20"></div>
-      
-      <div className="container mx-auto px-4 relative">
-        <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 font-inter">
-            ¿Tenés un electrodoméstico que no funciona?
+    <section className="py-20 bg-black">
+      <div className="container mx-auto px-4">
+        <div className="text-center text-white">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 max-w-2xl mx-auto">
+            ¿TENÉS UN <span className="text-primary">ELECTRODOMÉSTICO</span> QUE NO <span className="text-primary">FUNCIONA?</span>
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            No esperes más. Nuestros técnicos están listos para resolver tu problema hoy mismo. 
-            Contactanos ahora y obtené un presupuesto gratuito.
-          </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            No esperes más. Nuestros técnicos están listos para resolver tu{" "}
+            <span className="text-primary font-semibold">problema</span>{" "}
+            hoy mismo. Contactanos ahora y obtené un presupuesto{" "}
+            <span className="text-primary font-semibold">gratuito.</span>
+          </p>
+
+          {/* Phone Number Highlight */}
+          <div className="mb-8">
+            <div className="inline-block bg-white rounded-full px-8 py-4 mb-6">
+              <span className="text-2xl md:text-3xl font-bold text-black">2915049400</span>
+            </div>
+          </div>
+
+          {/* WhatsApp Button */}
+          <div className="mb-8">
             <Button 
-              variant="action" 
-              size="lg"
-              className="text-lg font-semibold bg-action hover:bg-action-hover"
-              onClick={() => window.open('tel:2915049400')}
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 text-lg rounded-full"
+              onClick={() => window.open('https://wa.me/5492915049400', '_blank', 'noopener,noreferrer')}
             >
-              <Phone className="w-6 h-6" />
-              2915049400
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="text-lg font-medium bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-              onClick={() => window.open('https://wa.me/5492915049400')}
-            >
-              <MessageCircle className="w-6 h-6" />
+              <MessageCircle className="mr-3 h-6 w-6" />
               WhatsApp
             </Button>
-          </div>
-          
-          <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
-            <div className="flex items-center justify-center gap-3 text-primary-foreground">
-              <Clock className="w-6 h-6 text-action" />
-              <div className="text-lg">
-                <span className="font-semibold">Horarios de atención:</span> Lunes a Viernes de 10 a 18 hs
-              </div>
-            </div>
-            <p className="text-primary-foreground/80 mt-2">
-              Respuesta inmediata • Presupuesto sin cargo • Servicio a domicilio
-            </p>
           </div>
         </div>
       </div>
