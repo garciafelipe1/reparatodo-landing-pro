@@ -54,7 +54,7 @@ const Hero = () => {
             {/* Contact Button */}
             <div className="pt-6">
               <a 
-                href="https://wa.me/542915049400?text=Hola!%20Quiero%20más%20información." 
+                onClick={() => window.open('https://wa.me/5492915049400')} 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
