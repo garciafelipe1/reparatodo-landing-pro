@@ -1,34 +1,36 @@
 import { WashingMachine, Zap, Home, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
+
 const services = [
   {
-    icon: WashingMachine,
+    image: "/lovable-uploads/lavarropas.jpg",
     title: "De Lavarropas",
     description: "Todas las marcas y modelos. Carga frontal y superior. Diagnóstico gratuito."
   },
   {
-    icon: Zap,
+    image: "/lovable-uploads/electrodomesticos.jpg",
     title: "De Electrodomésticos",
-    description: "Heladeras, microondas, hornos, lavavajillas y más. Técnicos especializados."
+    description: "Heladeras, cocinas, microondas, aires acondicionados y más. Técnicos especializados."
   },
   {
-    icon: Settings,
-    title: "Herramientas Eléctricas",
-    description: "Taladros, amoladoras, soldadoras y todo tipo de herramientas de hogar."
+    image: "/lovable-uploads/herramientass.jpg",
+    title: "De Herramientas",
+    description: "Soldadoras, taladros, amoladoras y más. Reparación y mantenimiento de herramientas eléctricas."
   },
   {
-    icon: Home,
-    title: "Reparaciones Generales",
-    description: "Instalaciones eléctricas, plomería básica y mantenimiento general del hogar."
+    image: "/lovable-uploads/hogar.jpg",
+    title: "Reparaciones del Hogar",
+    description: "Calderas, termotanques, bombas de agua y más. Soluciones rápidas y efectivas para tu hogar."
   }
-];
 
+];
 const Services = () => {
   return (
     <section className="py-16 bg-black relative overflow-hidden">
       {/* Decorative dots */}
-      <div className="absolute inset-0 opacity-15">
+      <div className="absolute inset-0 opacity-75">
         <div className="absolute top-4 left-6 w-1 h-1 bg-primary rounded-full"></div>
         <div className="absolute top-8 left-14 w-2 h-2 bg-primary rounded-full"></div>
         <div className="absolute top-12 left-4 w-1.5 h-1.5 bg-primary rounded-full"></div>
@@ -79,13 +81,17 @@ const Services = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={index} className="text-center">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <service.icon className="w-10 h-10 text-primary" />
+              <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-30 h-30 object-contain"
+                />
               </div>
-              <h3 className="text-sm font-bold text-primary uppercase mb-2">
+              <h3 className="text-xl font-bold text-primary uppercase mb-2">
                 {service.title}
               </h3>
-              <p className="text-white text-xs leading-relaxed">
+              <p className="text-white text-base leading-relaxed">
                 {service.description}
               </p>
             </div>

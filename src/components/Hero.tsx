@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="relative bg-black py-20 md:py-24 overflow-hidden">
       {/* Decorative dots pattern */}
-      <div className="absolute inset-0 opacity-15">
+      <div className="absolute inset-0 opacity-75">
         {/* Large grid patterns */}
         <div className="absolute bottom-0 left-0 w-40 h-40 opacity-40">
           <div className="grid grid-cols-8 gap-2 rotate-12">
@@ -48,6 +48,7 @@ const Hero = () => {
         <div className="absolute bottom-28 right-14 w-1 h-1 bg-primary rounded-full"></div>
         <div className="absolute bottom-36 right-22 w-2 h-2 bg-primary rounded-full"></div>
         <div className="absolute bottom-48 right-10 w-1 h-1 bg-primary rounded-full"></div>
+        
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

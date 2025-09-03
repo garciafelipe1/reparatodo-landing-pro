@@ -28,18 +28,29 @@ const Testimonials = () => {
   return (
     <section className="py-16 bg-black relative overflow-hidden">
       {/* Decorative dots */}
-      <div className="absolute inset-0 opacity-15">
-        <div className="absolute top-4 left-4 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-8 left-12 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-12 left-6 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute top-16 left-16 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-20 left-2 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-24 left-20 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-28 left-8 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute top-32 left-14 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-36 left-4 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-40 left-18 w-2 h-2 bg-primary rounded-full"></div>
+      <div className="absolute inset-0 opacity-75">
+        <div className="absolute top-10 left-8 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-16 left-4 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-24 left-12 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute top-32 left-20 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-40 left-6 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-48 left-16 w-1.5 h-1.5 bg-primary rounded-full"></div>
         
+        <div className="absolute top-12 right-12 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute top-28 right-8 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-36 right-16 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-44 right-4 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-52 right-20 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        
+        <div className="absolute bottom-10 left-16 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute bottom-20 left-24 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute bottom-32 left-8 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute bottom-44 left-20 w-1 h-1 bg-primary rounded-full"></div>
+        
+        <div className="absolute bottom-16 right-6 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute bottom-28 right-14 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute bottom-36 right-22 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute bottom-48 right-10 w-1 h-1 bg-primary rounded-full"></div>
         <div className="absolute top-6 right-6 w-1 h-1 bg-primary rounded-full"></div>
         <div className="absolute top-10 right-14 w-1.5 h-1.5 bg-primary rounded-full"></div>
         <div className="absolute top-14 right-4 w-2 h-2 bg-primary rounded-full"></div>

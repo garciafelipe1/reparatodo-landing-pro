@@ -22,7 +22,7 @@ const Benefits = () => {
   return (
     <section className="py-16 bg-black relative overflow-hidden">
       {/* Decorative dots */}
-      <div className="absolute inset-0 opacity-15">
+      <div className="absolute inset-0 opacity-75">
         <div className="absolute top-4 left-4 w-2 h-2 bg-primary rounded-full"></div>
         <div className="absolute top-8 left-12 w-1 h-1 bg-primary rounded-full"></div>
         <div className="absolute top-12 left-6 w-1.5 h-1.5 bg-primary rounded-full"></div>

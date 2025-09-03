@@ -5,7 +5,7 @@ const CTA = () => {
   return (
     <section className="py-20 bg-black relative overflow-hidden">
       {/* Decorative dots */}
-      <div className="absolute inset-0 opacity-15">
+      <div className="absolute inset-0 opacity-75">
         <div className="absolute top-4 left-6 w-1 h-1 bg-primary rounded-full"></div>
         <div className="absolute top-8 left-14 w-1.5 h-1.5 bg-primary rounded-full"></div>
         <div className="absolute top-12 left-2 w-2 h-2 bg-primary rounded-full"></div>
@@ -37,6 +37,7 @@ const CTA = () => {
         <div className="absolute bottom-14 right-4 w-1.5 h-1.5 bg-primary rounded-full"></div>
         <div className="absolute bottom-18 right-14 w-2 h-2 bg-primary rounded-full"></div>
         <div className="absolute bottom-22 right-22 w-1 h-1 bg-primary rounded-full"></div>
+        
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center text-white">
