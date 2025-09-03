@@ -26,8 +26,19 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-black">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-black relative overflow-hidden">
+      {/* Decorative dots */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-8 left-6 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-4 left-14 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-16 left-8 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute top-6 right-10 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute top-14 right-6 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute bottom-10 left-10 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute bottom-6 right-8 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute bottom-14 right-14 w-1.5 h-1.5 bg-primary rounded-full"></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             LO QUE <span className="text-primary">DICEN</span>

@@ -26,8 +26,19 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-16 bg-black">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-black relative overflow-hidden">
+      {/* Decorative dots */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-6 left-8 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute top-12 left-4 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-20 left-12 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-8 right-6 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-16 right-12 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute bottom-12 left-6 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute bottom-8 right-8 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute bottom-16 right-4 w-1.5 h-1.5 bg-primary rounded-full"></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             NUESTROS
