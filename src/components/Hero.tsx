@@ -52,7 +52,8 @@ const Hero = () => {
             </div>
 
             {/* Contact Button */}
-            <div className="pt-6">
+            <div className="flex gap-4 pt-6">
+              {/* WhatsApp */}
               <a 
                 onClick={() => window.open('https://wa.me/5492915049400')} 
                 target="_blank" 
@@ -62,6 +63,21 @@ const Hero = () => {
                   <img 
                     src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
                     alt="WhatsApp" 
+                    className="w-8 h-8"
+                  />
+                </div>
+              </a>
+
+              {/* Instagram */}
+              <a 
+                onClick={() => window.open('https://www.instagram.com/reparatodo.ig/')}  
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-pink-600 transition-colors shadow-lg">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                    alt="Instagram" 
                     className="w-8 h-8"
                   />
                 </div>
