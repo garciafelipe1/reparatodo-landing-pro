@@ -7,21 +7,47 @@ const Hero = () => {
   return (
     <section className="relative bg-black py-20 md:py-24 overflow-hidden">
       {/* Decorative dots pattern */}
-      <div className="absolute bottom-0 left-0 w-40 h-40 opacity-30">
-        <div className="grid grid-cols-8 gap-2 rotate-12">
-          {Array.from({ length: 64 }).map((_, i) => (
-            <div key={i} className="w-2 h-2 bg-primary rounded-full"></div>
-          ))}
+      <div className="absolute inset-0 opacity-15">
+        {/* Large grid patterns */}
+        <div className="absolute bottom-0 left-0 w-40 h-40 opacity-40">
+          <div className="grid grid-cols-8 gap-2 rotate-12">
+            {Array.from({ length: 64 }).map((_, i) => (
+              <div key={i} className="w-2 h-2 bg-primary rounded-full"></div>
+            ))}
+          </div>
         </div>
-      </div>
-      
-      {/* Decorative dots pattern - right */}
-      <div className="absolute top-20 right-0 w-32 h-32 opacity-20">
-        <div className="grid grid-cols-6 gap-2 -rotate-12">
-          {Array.from({ length: 36 }).map((_, i) => (
-            <div key={i} className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-          ))}
+        
+        <div className="absolute top-20 right-0 w-32 h-32 opacity-30">
+          <div className="grid grid-cols-6 gap-2 -rotate-12">
+            {Array.from({ length: 36 }).map((_, i) => (
+              <div key={i} className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+            ))}
+          </div>
         </div>
+
+        {/* Scattered individual dots */}
+        <div className="absolute top-10 left-8 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-16 left-4 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-24 left-12 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute top-32 left-20 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-40 left-6 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-48 left-16 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        
+        <div className="absolute top-12 right-12 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute top-28 right-8 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-36 right-16 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute top-44 right-4 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute top-52 right-20 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        
+        <div className="absolute bottom-10 left-16 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute bottom-20 left-24 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute bottom-32 left-8 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute bottom-44 left-20 w-1 h-1 bg-primary rounded-full"></div>
+        
+        <div className="absolute bottom-16 right-6 w-1.5 h-1.5 bg-primary rounded-full"></div>
+        <div className="absolute bottom-28 right-14 w-1 h-1 bg-primary rounded-full"></div>
+        <div className="absolute bottom-36 right-22 w-2 h-2 bg-primary rounded-full"></div>
+        <div className="absolute bottom-48 right-10 w-1 h-1 bg-primary rounded-full"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
