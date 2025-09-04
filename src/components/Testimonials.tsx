@@ -1,79 +1,18 @@
-import { Star, Quote } from "lucide-react";
-
-const testimonials = [
-  {
-    name: "María González",
-    location: "Palermo",
-    rating: 5,
-    text: "Excelente servicio! Vinieron el mismo día que llamé y arreglaron mi lavarropas Samsung en menos de una hora. Muy profesionales y precio justo.",
-    service: "Reparación de lavarropas"
-  },
-  {
-    name: "Carlos Méndez",
-    location: "Villa Crespo",
-    rating: 5,
-    text: "Hacía años que no encontraba quien arregle mi soldadora. Los técnicos de ReparaTodo la dejaron como nueva. Súper recomendable!",
-    service: "Herramientas eléctricas"
-  },
-  {
-    name: "Ana Rodríguez",
-    location: "Caballito",
-    rating: 5,
-    text: "Mi heladera dejó de enfriar un domingo y pensé que iba a perder toda la comida. Los contacté y vinieron ese mismo día. Increíble la rapidez!",
-    service: "Reparación de electrodomésticos"
-  }
-];
+import { useEffect } from "react";
 
 const Testimonials = () => {
+  useEffect(() => {
+    // Inserta el script de Elfsight si aún no existe
+    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://elfsightcdn.com/platform.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <section className="py-16 bg-black relative overflow-hidden">
-      {/* Decorative dots */}
-      <div className="absolute inset-0 opacity-75">
-        <div className="absolute top-10 left-8 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute top-16 left-4 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-24 left-12 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-32 left-20 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-40 left-6 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute top-48 left-16 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        
-        <div className="absolute top-12 right-12 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-28 right-8 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-36 right-16 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute top-44 right-4 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-52 right-20 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        
-        <div className="absolute bottom-10 left-16 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute bottom-20 left-24 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute bottom-32 left-8 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute bottom-44 left-20 w-1 h-1 bg-primary rounded-full"></div>
-        
-        <div className="absolute bottom-16 right-6 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute bottom-28 right-14 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute bottom-36 right-22 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute bottom-48 right-10 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-6 right-6 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-10 right-14 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-14 right-4 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute top-18 right-18 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-22 right-8 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-26 right-22 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute top-30 right-12 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute top-34 right-2 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute top-38 right-16 w-1 h-1 bg-primary rounded-full"></div>
-        
-        <div className="absolute bottom-4 left-8 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute bottom-8 left-2 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute bottom-12 left-16 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute bottom-16 left-6 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute bottom-20 left-22 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute bottom-24 left-10 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        
-        <div className="absolute bottom-6 right-12 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute bottom-10 right-4 w-1.5 h-1.5 bg-primary rounded-full"></div>
-        <div className="absolute bottom-14 right-20 w-2 h-2 bg-primary rounded-full"></div>
-        <div className="absolute bottom-18 right-8 w-1 h-1 bg-primary rounded-full"></div>
-        <div className="absolute bottom-22 right-16 w-1.5 h-1.5 bg-primary rounded-full"></div>
-      </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -83,39 +22,16 @@ const Testimonials = () => {
             NUESTROS <span className="text-primary">CLIENTES</span>
           </h2>
           <p className="text-gray-300 mb-8">
-            Miles de familias <span className="text-primary">confían</span> en nosotros. Lee las <span className="text-primary">opiniones</span> de quienes ya eligieron ReparaTodo.
+            Miles de familias <span className="text-primary">confían</span> en nosotros. Lee las{" "}
+            <span className="text-primary">opiniones</span> de quienes ya eligieron ReparaTodo.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg shadow-lg relative">
-              <div className="flex items-start mb-3">
-                <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                  <span className="text-white font-bold text-sm">{testimonial.name[0]}</span>
-                </div>
-                <div className="flex-1">
-                  <h4 className="font-semibold text-gray-900 text-sm">{testimonial.name}</h4>
-                  <p className="text-xs text-gray-600">{testimonial.location}</p>
-                </div>
-              </div>
-              
-              <p className="text-gray-800 text-sm mb-3">"{testimonial.text}"</p>
-              
-              <div className="flex items-center justify-between">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star 
-                      key={i} 
-                      className={`w-3 h-3 ${i < testimonial.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
-                    />
-                  ))}
-                </div>
-                <span className="text-xs text-gray-600">{testimonial.service}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Elfsight Google Reviews */}
+        <div
+          className="elfsight-app-bebd2e61-6459-49b8-b9b6-b114ddaee2aa"
+          data-elfsight-app-lazy
+        ></div>
       </div>
     </section>
   );
