@@ -88,7 +88,7 @@ const Services = () => {
                   className="w-30 h-30 object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-primary uppercase mb-2">
+              <h3 className="text-sm font-bold text-primary uppercase mb-2">
                 {service.title}
               </h3>
               <p className="text-white text-base leading-relaxed">
