@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 const heroImage = "/lovable-uploads/c3d27fec-319b-440e-9464-21a7daf15576.png";
-const logoImage = "/lovable-uploads/logo.svg";
+const logoImage = "/lovable-uploads/logo.png";
 
 const Hero = () => {
   return (
@@ -98,11 +98,11 @@ const Hero = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-green-600 transition-colors shadow-lg">
+                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-400 transition-colors shadow-lg">
                   <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                    alt="WhatsApp" 
-                    className="w-8 h-8"
+                    src="/lovable-uploads/logowp.png" 
+                    alt="Instagram" 
+                    className="w-22 h-20"
                   />
                 </div>
               </a>
@@ -113,11 +113,11 @@ const Hero = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-pink-600 transition-colors shadow-lg">
+                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-400 transition-colors shadow-lg">
                   <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                    src="/lovable-uploads/logoig.png" 
                     alt="Instagram" 
-                    className="w-8 h-8"
+                    className="w-22 h-20"
                   />
                 </div>
               </a>

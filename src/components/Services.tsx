@@ -10,17 +10,17 @@ const services = [
     description: "Todas las marcas y modelos. Carga frontal y superior. Diagnóstico gratuito."
   },
   {
-    image: "/lovable-uploads/electrodomesticos.jpg",
+    image: "/lovable-uploads/electrodomesticos.webp",
     title: "Electrodomésticos",
     description: "Heladeras, cocinas, microondas, aires acondicionados y más. Técnicos especializados."
   },
   {
-    image: "/lovable-uploads/herramientass.jpg",
+    image: "/lovable-uploads/herramientas.webp",
     title: "Herramientas",
     description: "Soldadoras, taladros, amoladoras y más. Reparación y mantenimiento de herramientas eléctricas."
   },
   {
-    image: "/lovable-uploads/hogar.jpg",
+    image: "/lovable-uploads/hoogar.webp",
     title: "Reparaciones del Hogar",
     description: "Calderas, termotanques, bombas de agua y más. Soluciones rápidas y efectivas para tu hogar."
   }
