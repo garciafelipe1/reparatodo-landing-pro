@@ -1,33 +1,33 @@
-import { Shield, Clock, DollarSign, Users, Wrench, Star } from "lucide-react";
+
 
 const benefits = [
   {
-    icon: Shield,
+    Image: "/lovable-uploads/seguridad.png",
     title: "Servicio Garantizado", 
     description: "Todos nuestros trabajos incluyen garantía. Tu tranquilidad es nuestra prioridad"
   },
   {
-    icon: Clock,
+    Image: "/lovable-uploads/rapidez.png",
     title: "Rapidez y Puntualidad",
     description: "Respuesta inmediata y servicio en el día, con los horarios acordados."
   },
   {
-    icon: DollarSign,
+    Image:"/lovable-uploads/preciosjustos.png",
     title: "Precios Justos",
     description: "Presupuestos transparentes sin sorpresas. El mejor precio del mercado."
   },
   {
-    icon: Users,
+    Image: "/lovable-uploads/atencion.png",
     title: "Atención Personalizada",
     description: "Cada cliente es único. Te asesoramos y acompañamos en todo el proceso."
   },
   {
-    icon: Wrench,
+    Image: "/lovable-uploads/tecnicos.png",
     title: "Técnicos Especializados",
     description: "Profesionales capacitados con experiencia en todas las marcas y modelos."
   },
   {
-    icon: Star,
+    Image: "/lovable-uploads/calidad.png",
     title: "Calidad Profesional",
     description: "Más de 10 años brindando soluciones efectivas a miles de familias."
   }
@@ -83,14 +83,22 @@ const Benefits = () => {
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          {benefits.map((service, index) => (
             <div key={index} className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <benefit.icon className="w-8 h-8 text-white" />
+              <div className="w-20 h-20 bg-black rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                <img
+                  src={service.Image}
+                  alt={service.title}
+                  className="w-30 h-30 "
+                />
               </div>
-              <h3 className="text-lg font-bold mb-3 text-white uppercase">{benefit.title}</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">{benefit.description}</p>
+              <h3 className="text-sm font-bold text-primary uppercase mb-2">
+                {service.title}
+              </h3>
+              <p className="text-white text-base leading-relaxed">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
