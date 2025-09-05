@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Decorative dots pattern */}
       <div className="absolute inset-0 opacity-75">
         {/* Large grid patterns */}
-        <div className="absolute bottom-0 left-0 w-40 h-40 opacity-40">
+        {/* <div className="absolute bottom-0 left-0 w-40 h-40 opacity-40">
           <div className="grid grid-cols-8 gap-2 rotate-12">
             {Array.from({ length: 64 }).map((_, i) => (
               <div key={i} className="w-2 h-2 bg-primary rounded-full"></div>
@@ -23,7 +23,7 @@ const Hero = () => {
               <div key={i} className="w-1.5 h-1.5 bg-primary rounded-full"></div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Scattered individual dots - Left side */}
         <div className="absolute inset-0 opacity-75">
