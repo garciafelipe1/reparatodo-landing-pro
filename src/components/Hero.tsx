@@ -113,7 +113,7 @@ const Hero = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-400 transition-colors shadow-lg">
+                <div className="w-16 h-16   bg-red-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-400 transition-colors shadow-lg ">
                   <img 
                     src="/lovable-uploads/logoig.png" 
                     alt="Instagram" 

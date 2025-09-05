@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, Clock } from "lucide-react";
+import {  MessageCircle, Clock } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -54,12 +55,13 @@ const CTA = () => {
           </p>
 
           {/* Phone Number Highlight */}
-          <div className="mb-2">
+          <div className="mb-2 ">
             <a 
               href="tel:2915049400" 
-              className="inline-block bg-white rounded-full px-4 py-2 mb-3"
+              className="inline-flex items-center bg-white hover:bg-black-100 rounded-full  px-4 py-2"
             >
-              <span className="text-xl md:text-2xl font-bold text-black">2915049400</span>
+              <span className="text-xl md:text-xl font-bold text-red-600 ">2915049400</span>
+              <Phone className="w-5 h-5 ml-3 text-action" />
             </a>
           </div>
 
