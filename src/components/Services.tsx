@@ -6,17 +6,17 @@ import { Button } from "@/components/ui/button";
 const services = [
   {
     image: "/lovable-uploads/lavarropas.jpg",
-    title: "De Lavarropas",
+    title: "Lavarropas",
     description: "Todas las marcas y modelos. Carga frontal y superior. Diagnóstico gratuito."
   },
   {
     image: "/lovable-uploads/electrodomesticos.jpg",
-    title: "De Electrodomésticos",
+    title: "Electrodomésticos",
     description: "Heladeras, cocinas, microondas, aires acondicionados y más. Técnicos especializados."
   },
   {
     image: "/lovable-uploads/herramientass.jpg",
-    title: "De Herramientas",
+    title: "Herramientas",
     description: "Soldadoras, taladros, amoladoras y más. Reparación y mantenimiento de herramientas eléctricas."
   },
   {
