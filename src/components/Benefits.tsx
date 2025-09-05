@@ -15,6 +15,21 @@ const benefits = [
     icon: DollarSign,
     title: "Precios Justos",
     description: "Presupuestos transparentes sin sorpresas. El mejor precio del mercado."
+  },
+  {
+    icon: Users,
+    title: "Atención Personalizada",
+    description: "Cada cliente es único. Te asesoramos y acompañamos en todo el proceso."
+  },
+  {
+    icon: Wrench,
+    title: "Técnicos Especializados",
+    description: "Profesionales capacitados con experiencia en todas las marcas y modelos."
+  },
+  {
+    icon: Star,
+    title: "Calidad Profesional",
+    description: "Más de 10 años brindando soluciones efectivas a miles de familias."
   }
 ];
 
