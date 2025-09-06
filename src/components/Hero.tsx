@@ -119,7 +119,7 @@ const Hero = () => {
               >
                 <div className="w-16 h-16 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
                   <img 
-                    src="/lovable-uploads/logowp.jpg" 
+                    src="/lovable-uploads/whatsapplogo.jpg" 
                     alt="WhatsApp" 
                     className="w-16 h-16 rounded-full shadow-lg"
                   />

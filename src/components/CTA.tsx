@@ -55,24 +55,28 @@ const CTA = () => {
           </p>
 
           {/* Phone Number Highlight */}
-          <div className="mb-2 ">
+          <div className="mb-2">
             <a 
-              href="tel:2915049400" 
-              className="inline-flex items-center bg-white hover:bg-black-100 rounded-full  px-4 py-2"
+              href="tel:+5492915049400" 
+              className="inline-flex items-center bg-white hover:bg-gray-100 rounded-full px-5 py-3 transition-colors shadow-md"
             >
-              <span className="text-xl md:text-xl font-bold text-red-600 ">2915049400</span>
-              <Phone className="w-5 h-5 ml-3 text-action" />
+              <Phone className="w-6 h-6 ml-2 text-red-600 mr-2" />
+              <span className="text-lg md:text-xl font-bold text-red-600">¡Llamar ahora!</span>
             </a>
           </div>
 
           {/* WhatsApp Button */}
-          <div className="mb-3">
+          <div className="mb-3 flex justify-center ">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/50 text-white font-bold px-3 py-4 text-lg rounded-full"
+              className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 text-lg rounded-full shadow-lg transition-transform hover:scale-105"
               onClick={() => window.open('https://wa.me/5492915049400', '_blank', 'noopener,noreferrer')}
             >
-              <MessageCircle className="mr-3 h-6 w-6" />
+              <img 
+                src="/lovable-uploads/wp.jpg" 
+                alt="WhatsApp" 
+                className="w-10 h-10 rounded-full"
+              />
               WhatsApp
             </Button>
           </div>
