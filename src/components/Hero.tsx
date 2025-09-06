@@ -92,7 +92,7 @@ const Hero = () => {
 
             {/* Texto principal */}
             <p className="text-3xl md:text-4xl lg:text-3xl font-bold font-inter leading-tight text-white text-center">
-              <span className="text-primary">Cliquea aca</span>{" "} y contactate conmigo!
+              <span className="text-primary">Cliquea acá y </span>{" "} contáctame conmigo!
             </p>
 
             {/* Flecha animada con SVG */}
