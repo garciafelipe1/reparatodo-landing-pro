@@ -90,38 +90,59 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Contact Button */}
-            <div className="flex gap-4 pt-6">
+            {/* Texto principal */}
+            <p className="text-3xl md:text-4xl lg:text-3xl font-bold font-inter leading-tight text-white text-center">
+              <span className="text-primary">Cliquea aca</span>{" "} y contactate conmigo!
+            </p>
+
+            {/* Flecha animada con SVG */}
+            <div className="flex justify-center ">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                strokeWidth={2} 
+                stroke="white" 
+                className="w-8 h-8 animate-bounce"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+
+            {/* Botones de contacto */}
+            <div className="flex gap-6 pt-2 justify-center">
               {/* WhatsApp */}
               <a 
                 onClick={() => window.open('https://wa.me/5492915049400')} 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-400 transition-colors shadow-lg">
+                <div className="w-16 h-16 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
                   <img 
-                    src="/lovable-uploads/logowp.png" 
-                    alt="Instagram" 
-                    className="w-22 h-20"
+                    src="/lovable-uploads/logowp.jpg" 
+                    alt="WhatsApp" 
+                    className="w-16 h-16 rounded-full shadow-lg"
                   />
                 </div>
               </a>
 
               {/* Instagram */}
               <a 
-                onClick={() => window.open('https://www.instagram.com/reparatodo.ig/')}  
+                onClick={() => window.open('https://www.instagram.com/reparatodo.ig/')} 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <div className="w-16 h-16   bg-red-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-400 transition-colors shadow-lg ">
+                <div className="w-20 h-16 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
                   <img 
-                    src="/lovable-uploads/logoig.png" 
+                    src="/lovable-uploads/logoinst.jpg" 
                     alt="Instagram" 
-                    className="w-22 h-20"
+                    className="w-20 h-20 rounded-full shadow-lg"
                   />
                 </div>
               </a>
             </div>
+
+
           </div>
 
           {/* Image */}
