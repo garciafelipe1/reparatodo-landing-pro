@@ -78,9 +78,9 @@ const Hero = () => {
             
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-inter leading-tight text-white">
-                REPARACION DE{" "}
+                REPARACIÓN DE{" "}
                 <span className="text-primary">LAVARROPAS</span>{" "}
-                Y SECADORA EN BAHIA BLANCA
+                Y SECADORA EN BAHÍA BLANCA
               </h1>
               
               <p className="text-xl text-gray-300 max-w-lg leading-relaxed">

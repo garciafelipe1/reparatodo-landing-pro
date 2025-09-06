@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-action" />
-                <span>Lun-Vie 10-18hs</span>
+                <span>Lun-Sab 09-19hs</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-action" />
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/60">
-          <p>&copy; 2024 ReparaTodo. Todos los derechos reservados. Servicio profesional de reparaciones.</p>
+          <p>&copy; 2025 ReparaTodo. Todos los derechos reservados. Servicio profesional de reparaciones.</p>
         </div>
       </div>
     </footer>
